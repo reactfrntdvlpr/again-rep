@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>Swiper Slider js</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="swiperSlider.css">
+</head>
+<body>
+<section class="slider_container">
+	<div class="container">
+      <div class="swiper mySwiper">
+         <div class="swiper-wrapper">
+		      <div class="swiper-slide">
+		      	<div class="img_box">
+		      		<img src="Images/slider1.jpg">
+		      	</div>
+		      </div>
+		      <div class="swiper-slide">
+		      	<div class="img_box">
+		      		<img src="Images/slider2.jpg">
+		      	</div>
+		      </div>
+		      <div class="swiper-slide">
+		      	<div class="img_box">
+		      		<img src="Images/slider3.jpg">
+		      	</div>
+		      </div>
+		      <div class="swiper-slide">
+		      	<div class="img_box">
+		      		<img src="Images/slider6.jpg">
+		      	</div>
+		      </div>
+		      <div class="swiper-slide">
+		      	<div class="img_box">
+		      		<img src="Images/slider7.jpg">
+		      	</div>
+		      </div>
+		      <div class="swiper-slide">
+		      	<div class="img_box">
+		      		<img src="Images/slider8.jpg">
+		      	</div>
+		      </div>
+		      <div class="swiper-slide">
+		      	<div class="img_box">
+		      		<img src="Images/slider9.jpg">
+		      	</div>
+		      </div>
+		      
+         </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+      </div>
+  </div>
+</section>	
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>	
+ <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      
+      spaceBetween: 10,
+      loop : true,
+      speed : 1000,
+      autoplay :{
+      	delay : 2000,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        // type:"fraction",
+        // type:"progressbar",
+        type:"bullets",
+        // dynamicBullets: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+       
+        },
+
+        480: {
+          slidesPerView: 2,
+       
+        },
+
+        768: {
+          slidesPerView: 3,
+         
+        },
+        1200: {
+          slidesPerView: 4,
+          
+        },
+      },
+    });
+  </script>
+
+ <!--  <script type="text/javascript">
+  	var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+      },
+    });
+  </script> -->
+
+  
+</body>
+</html>
